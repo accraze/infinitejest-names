@@ -1,0 +1,31 @@
+{
+  "name": "infinitejest-names",
+  "version": "1.0.0",
+  "description": "retrieve a random name from DFW's monolithic novel Infinite Jest",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accraze/infinitejest-names.git"
+  },
+  "keywords": [
+    "random",
+    "infinite",
+    "jest",
+    "dfw",
+    "david",
+    "foster",
+    "wallace"
+  ],
+  "author": "accraze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/accraze/infinitejest-names/issues"
+  },
+  "homepage": "https://github.com/accraze/infinitejest-names",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}
