@@ -1,6 +1,6 @@
 {
   "name": "infinitejest-names",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "retrieve a random name from DFW's monolithic novel Infinite Jest",
   "main": "src/index.js",
   "scripts": {
