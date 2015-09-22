@@ -3,7 +3,7 @@ var infiniteJest = require('./index');
 
 describe('infinitejest-names', function(){
   describe('all', function () {
-    it('should be an arrya of strings', function () {
+    it('should be an array of strings', function () {
       expect(infiniteJest.all).to.satisfy(isArrayOfStrings);
 
       function isArrayOfStrings(array) {
