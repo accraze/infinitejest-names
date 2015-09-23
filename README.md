@@ -6,18 +6,19 @@
 [![license](https://img.shields.io/npm/l/infinitejest-names.svg)](https://www.npmjs.com/package/infinitejest-names)
 
 
-## Getting Started
-#### Install
+## Install
 ```
 $ npm install infinitejest-names
 ```
 
-#### Useage
+## Useage
 ```
 $ node
 > 
 > var infinitejest = require('infinitejest-names');
+
 > infinitejest.all
+
 ['Hal Incandenza',
   'Joelle Van Dyne',
   'Michael Pemulis',
@@ -36,6 +37,7 @@ $ node
   'Otis P. Lord'
 
 > infinitejest.random(4)
+
 [ 'Todd Possalthwaite',
   'Jim Troelsch',
   'Fully Functional Phil',
