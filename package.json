@@ -1,10 +1,13 @@
 {
   "name": "infinitejest-names",
   "description": "retrieve a random name from DFW's monolithic novel Infinite Jest",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w",
-    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
+    "test": "mocha src/index.test.js -w --compilers js:babel/register",
+    "prebuild":"rm -rf dist && mkdir dist",
+    "build":"babel src/index.js -o dist/index.js",
+    "postbuild":"cp src/infinitejest-names.json dist/infinitejest-names.json",
+    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js --compilers js:babel/register",
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "commit": "git-cz",
@@ -33,6 +36,7 @@
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {
+    "babel": "5.8.23",
     "chai": "3.3.0",
     "codecov.io": "0.1.6",
     "commitizen": "1.0.4",

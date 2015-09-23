@@ -1,5 +1,6 @@
-var infiniteJestNames = require('./infinitejest-names.json');
-var uniqueRandomArray = require('unique-random-array');
+import infiniteJestNames from './infinitejest-names.json';
+import uniqueRandomArray from 'unique-random-array';
+
 var getRandomItem = uniqueRandomArray(infiniteJestNames);
 
 module.exports = {

@@ -1,5 +1,5 @@
-var expect = require('chai').expect;
-var infiniteJest = require('./index');
+import {expect} from 'chai';
+import infiniteJest from './index';
 
 describe('infinitejest-names', function(){
   describe('all', function () {
